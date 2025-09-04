@@ -1,6 +1,8 @@
 # Dependencies
 node_modules/
 vendor/
+carrent/Backend/vendor/
+carrent/Frontend/node_modules/
 
 # Environment files
 .env
@@ -9,6 +11,8 @@ vendor/
 .env.test.local
 .env.production.local
 .env.staging
+carrent/Backend/.env
+carrent/Frontend/.env
 
 # Build outputs
 build/
@@ -17,6 +21,11 @@ public/build/
 public/hot
 public/storage
 storage/*.key
+carrent/Frontend/build/
+carrent/Backend/public/build/
+carrent/Backend/public/hot
+carrent/Backend/public/storage
+carrent/Backend/storage/*.key
 
 # Logs
 *.log
@@ -26,6 +35,8 @@ yarn-error.log*
 laravel.log
 storage/logs/*
 !storage/logs/.gitkeep
+carrent/Backend/storage/logs/*
+!carrent/Backend/storage/logs/.gitkeep
 
 # Runtime data
 pids
@@ -101,6 +112,20 @@ storage/framework/views/*
 storage/logs/*
 !storage/logs/.gitkeep
 
+# Laravel specific in carrent/Backend
+carrent/Backend/bootstrap/cache/*
+!carrent/Backend/bootstrap/cache/.gitkeep
+carrent/Backend/storage/app/*
+!carrent/Backend/storage/app/.gitkeep
+carrent/Backend/storage/framework/cache/*
+!carrent/Backend/storage/framework/cache/.gitkeep
+carrent/Backend/storage/framework/sessions/*
+!carrent/Backend/storage/framework/sessions/.gitkeep
+carrent/Backend/storage/framework/testing/*
+!carrent/Backend/storage/framework/testing/.gitkeep
+carrent/Backend/storage/framework/views/*
+!carrent/Backend/storage/framework/views/.gitkeep
+
 # IDE files
 .vscode/
 .idea/
@@ -128,24 +153,32 @@ Thumbs.db
 # Composer
 composer.phar
 /vendor/
+carrent/Backend/vendor/
 
 # PHPUnit
 .phpunit.result.cache
 /phpunit.xml
+carrent/Backend/phpunit.xml
 
 # Laravel Mix
 /public/js
 /public/css
 /public/mix-manifest.json
+carrent/Backend/public/js
+carrent/Backend/public/css
+carrent/Backend/public/mix-manifest.json
 
 # Laravel Telescope
 /storage/telescope/
+carrent/Backend/storage/telescope/
 
 # Laravel Horizon
 /storage/horizon/
+carrent/Backend/storage/horizon/
 
 # Laravel Passport
 /storage/oauth-*.key
+carrent/Backend/storage/oauth-*.key
 
 # Backup files
 *.bak
